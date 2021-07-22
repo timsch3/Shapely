@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+/* ==================== Navbar */
+header, header nav, header ul {
+    display: flex;
+    align-items: center;
+}
+header {
+    height: 76px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+nav {
+    min-width: 100%;
+    justify-content: space-around;
+}
+header ul li {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 0.8em;
+}
+.logo {
+    font-size: 1.5em;
+    color: #666;
+}
+.logo:hover {
+    color: #333;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #337ab7;
+}
+/* ==================== Top section */
+#hero {
+    min-height: 100vh;
+    background: url(../img/ocean_bg.jpg) center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+#hero p {
+    padding-top: 2.5em;
+    font-size: 1em;
+}
+/* ---------- Link buttons */
+#hero div {
+    padding-top: 2em;
+    max-width: 100%;
+}
+#hero div a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    min-width: 12em;
+}
+#hero div a:first-of-type {
+    padding: 15px 35px;
+    background: #00000000;
+    border: 2px solid #fff;
+    transition: background .25s ease-out;
+}
+#hero div a:first-of-type:hover {
+    background: #fff;
+    color: #000;
+}
+#hero div a:last-of-type {
+    padding: 17px 37px;
+    background-color: #745cf9;
+    transition: background .25s ease-out;
+}
+#hero div a:last-of-type:hover {
+    background-color: #5234f9;
+}
